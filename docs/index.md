@@ -14,7 +14,7 @@ hero:
       link: /api-examples
     - theme: alt
       text: 常见问题
-      link: /api-examples
+      link: /hnfaq
 
 features:
   - icon: 📚
