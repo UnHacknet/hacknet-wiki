@@ -7,7 +7,7 @@ hero:
   tagline: 以<b>内容为主</b>，由社区驱动的开源文档项目。
   actions:
     - theme: brand
-      text: Hacknet Extension 教程
+      text: Extension 教程
       link: /extension-tutorial
     - theme: alt
       text: 参考
