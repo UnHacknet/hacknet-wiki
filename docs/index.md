@@ -24,7 +24,7 @@ features:
     title: "[WIP] Extension 功能参考"
     details: 对 Hacknet 与 Hacknet Extension 一些概念、功能的详细解释。
   - icon: ❓
-    title: 常见问题大全
+    title: 常见问题
     details: 收录一些在使用 Hacknet 、Extension 开发中可能遇到的常见问题。
   - icon: 🌐
     title: 开源
