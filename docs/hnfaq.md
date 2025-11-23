@@ -2,7 +2,7 @@
 import RainbowText from './components/RainbowText.vue'
 </script>
 
-# 常见问题
+# 常见问题大全
 
 这里收录了部分常见的 Hacknet 问题。
 
