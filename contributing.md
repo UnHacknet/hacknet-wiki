@@ -48,6 +48,20 @@ Hacknet.wiki 基于 vitepress，具备很多开箱即用功能，被认为是已
 
 ## Pull Request 指南
 
+```mermaid
+flowchart LR
+    A[新PR] --> B{有效?}
+    B -->|否| C[拒绝]
+    B -->|是| D[检查]
+    D --> E{需要修改?}
+    E -->|是| F[修改]
+    F --> D
+    E -->|否| G[通过]
+    G --> H{测试}
+    H -->|通过| I[合并]
+    H -->|不通过| D
+```
+
 ### 哪些 Pull Request 会被通过？
 
 **TL;DR: 保持内容优质，避免无关变更。**
