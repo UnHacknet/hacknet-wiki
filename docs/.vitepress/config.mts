@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Hacknet.wiki",
-  description: "Hacknet (Extension) 教程、文档与参考",
+  description: "Hacknet (Extension) 文档中心",
   lang: "zh-CN",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
