@@ -8,12 +8,12 @@ import RainbowText from './components/RainbowText.vue'
 
 ## Q：玩 Hacknet 算入门黑客吗？
 
-::: details A：
+::: details A：（点击展开）
 <RainbowText>不算</RainbowText>
 :::
 
 ## Q：现实中存在类似 PortHack 的工具吗？
-::: details A：
+::: details A：（点击展开）
 <RainbowText>没有</RainbowText>
 :::
 
