@@ -19,7 +19,7 @@ outline: deep
 复制一份 `游戏根目录/Extensions/BlankExtension/` 并改名，将里面的 `EDIT_ME_ExtensionInfo.xml` 改为 `ExtensionInfo.xml`。后面内容以 `MyFirstExtension` 为例。
 
 ```bash
-# 注：这只是 bash 命令的示例，你可以使用你的电脑都操作逻辑来创建项目。
+# 注：这只是 bash 命令的示例，你可以使用你习惯的电脑操作逻辑来创建项目。
 $ cp -r "游戏根目录/Extensions/BlankExtension/" "游戏根目录/Extensions/MyFirstExtension/"
 $ cd "游戏根目录/Extensions/MyFirstExtension/"
 $ mv EDIT_ME_ExtensionInfo.xml ExtensionInfo.xml
