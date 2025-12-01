@@ -12,7 +12,7 @@ export default defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "Extension 教程", link: "/extension-tutorial" },
-      { text: "参考", link: "/reference" },
+      { text: "参考文档", link: "/reference" },
       { text: "常见问题", link: "/hnfaq" },
       {
         text: "关于",
