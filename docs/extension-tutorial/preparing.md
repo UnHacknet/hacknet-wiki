@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # 准备工作
 
 在开发 Hacknet Extension 之前，你需要做一些准备以下内容来提高你的扩展开发效率。
@@ -9,7 +12,7 @@
 
 ## 创建项目
 
-### 通过复制 `BlankExtension` 创建项目
+### 通过 `BlankExtension` 创建项目
 
 `BlankExtension` 是游戏自带的扩展结构模板，我们可以通过复制 `BlankExtension` 来创建一个新的 Extension 项目。
 
@@ -22,9 +25,7 @@ $ cd "游戏根目录/Extensions/MyFirstExtension/"
 $ mv EDIT_ME_ExtensionInfo.xml ExtensionInfo.xml
 ```
 
-编辑 `ExtensionInfo.xml`，修改 `Name` 元素的内容；然后添加 `Language` 元素，内容为 `zh-cn`。需要注意的是，`Name` 元素的内容长度不能超过 128 个字符，且必须是英文字符。这里以 `MyFirstExtension` 为例。
-
-
+编辑 `ExtensionInfo.xml`，修改 `Name` 元素的内容；然后添加 `Language` 元素，内容为 `zh-cn`。这里以 `MyFirstExtension` 为例。
 
 ```xml
 <ExtensionInfo>
@@ -36,8 +37,12 @@ $ mv EDIT_ME_ExtensionInfo.xml ExtensionInfo.xml
   ...
 </ExtensionInfo>
 ```
+> [!NOTE]
+> 扩展的名称不能超过 128 个字符，且必须是英文字符。
 
 （其他内容暂时保持原样）
+
+### 验证扩展创建成功
 
 启动 Hacknet，点击 Extensions 按钮，在扩展列表中看看是否有 `MyFirstExtension` 这个扩展。如果有，说明扩展创建成功。
 
@@ -46,7 +51,7 @@ $ mv EDIT_ME_ExtensionInfo.xml ExtensionInfo.xml
 > [!NOTE]
 > 后续 `MyFirstExtension` 将成为我们的工作目录，在没有特殊说明的情况下，所有操作都在这个目录下进行。
 
-### 解决一个 `BlankExtension` 的遗留 bug
+### 修复一个 `BlankExtension` 的 bug
 
 如果你在刚刚的扩展页面点击 `Run Verfication Tests`，会发现扩展报错了。
 
