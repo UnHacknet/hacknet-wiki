@@ -9,5 +9,8 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@shikijs/transformers": "^3.17.1"
   }
 }
