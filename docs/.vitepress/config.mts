@@ -37,7 +37,10 @@ export default defineConfig({
       "/extension-tutorial": [
         {
           text: "Extension 教程",
-          items: [{ text: "开始", link: "/extension-tutorial" }],
+          items: [
+            { text: "开始", link: "/extension-tutorial" },
+            { text: "准备工作", link: "/extension-tutorial/preparing" },
+          ],
         },
       ],
     },
