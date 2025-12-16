@@ -18,19 +18,27 @@ My name is Pitiedwzr, be ready for your unforgettable journey.
 
 那么这一段代码要如何实现呢？
 
-First, 在你的拓展文件夹内新建一个txt文档，并改名为Intro.txt
+First, 在你的拓展文件夹内新建一个txt文档(这里使用之前创建的MyFirstExtension作为演示)，并改名为Intro.txt
 
 然后在里面输入你想要的内容 接下来保存
 
 接下来打开ExtensionsInfo.xml 将HasIntroStartup设置成true
 
-![](../.gitbook/assets/image5.png) （设置成false可以跳过启动画面，便于测试）
+```text
+<HasIntroStartup>true</HasIntroStartup>
+```
+ （设置成false可以跳过启动画面，便于测试）
 
 接下来就是对于文段的讲解
 
 由于Hacknet令人生草的设置，IntroStartup不能设置中文，否则就会出现如下结果
-
-![](../.gitbook/assets/image6.png) 图中的???????就是我输入的中文（这是在语言设置为en-us时，在zh-cn下是方框）
+```text
+?????????
+?????????????????bug
+????????????????
+the compare
+```
+ 这里的???????就是我输入的中文（这是在语言设置为en-us时，在zh-cn下是方框）
 
 那要如何输入中文呢？
 
