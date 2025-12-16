@@ -45,6 +45,12 @@ export default defineConfig({
           ],
         },
       ],
+      "/reference": [
+        {
+          text: "参考文档",
+          items: [{ text: "Hacknet 参考", link: "/reference/" }],
+        },
+      ],
     },
 
     socialLinks: [
