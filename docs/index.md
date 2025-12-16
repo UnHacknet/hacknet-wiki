@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Extension 教程
-      link: /extension-tutorial
+      link: /extension-tutorial/
     - theme: alt
       text: 参考文档
-      link: /reference
+      link: /reference/
     - theme: alt
       text: 常见问题
       link: /hnfaq
