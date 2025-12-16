@@ -60,6 +60,10 @@ export default defineConfig({
                   text: "Action（行为）",
                   link: "/reference/Action",
                 },
+                {
+                  text: "Condition（条件）",
+                  link: "/reference/Condition",
+                },
               ],
             },
           ],
