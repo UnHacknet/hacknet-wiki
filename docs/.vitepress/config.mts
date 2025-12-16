@@ -50,6 +50,20 @@ export default defineConfig({
           text: "参考文档",
           items: [{ text: "Hacknet 参考", link: "/reference/" }],
         },
+        {
+          text: "Extension",
+          items: [
+            {
+              text: "Action & Faction",
+              items: [
+                {
+                  text: "Action（行为）",
+                  link: "/reference/Action",
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
 
