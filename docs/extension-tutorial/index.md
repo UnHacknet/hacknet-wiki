@@ -13,7 +13,7 @@ Hacknet Extension 是 Hacknet 的玩家扩展内容，主要由媒体文件和�
 
 社区资源：
 - [Hacknet-Extension-Tutorial](https://github.com/FBIKdot/Hacknet-Extension-Tutorial) / [Old.Hacknet.wiki](https://old.hacknet.wiki)
-- Hacknet 扩展制作指南 – 入门》 by Pitiedwzr & Err0r233
+- 《Hacknet 扩展制作指南 – 入门》 by Pitiedwzr & Err0r233
 - 《Hacknet 主机编辑指南》 by Cyl18
 
 官方资源：
