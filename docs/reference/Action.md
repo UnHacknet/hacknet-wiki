@@ -2,27 +2,10 @@
 
 Action 可以 实时改变游戏中的部分内容。
 
-Action 可以分为两部分：`Condition` 和 `Trigger`。
+在 Hacknet Extension 中有两种方法使用 Action：
+- 通过 ConditionalAction
+- 通过 Faction
 
 > [!NOTE]
-> 部分教程没有这么区分，但是为了方便交流，和方便理解 `Action` 与 `Faction` 的关系，在此将其分为 `Condition` 和 `Trigger` 两部分。
+> ConditionalAction 与 Action 都可以被称为 Action。Hacknet.wiki 认为 Action 是 ConditionalAction 的一部分。为了以示区别，方便理解他们之间的关系，本章节均不会使用 Action 来代指 ConditionalAction。
 
-## Action 的结构
-
-描述 Action 的 XML 结构如下：
-
-```xml
-<!-- 根标签 -->
-<ConditionalActions>
-
-    <!-- Condition -->
-    <Instantly needsMissionComplete="false">
-
-        <!-- Trigger -->
-        <SaveGame DelayHost="delayNode" Delay="0"/>
-        ...
-    </Instantly>
-
-    ...
-</ConditionalActions>
-```
