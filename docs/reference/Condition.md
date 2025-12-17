@@ -1,6 +1,6 @@
 # Condition（条件）
 
-`Condition` 用于描述 `Trigger` 被执行前需要满足的条件。当 `Action` 被加载后，`Trigger` 会在 `Condition` 满足后执行。
+`Condition` 用于描述 `Action` 被执行前需要满足的条件。
 
 ## 所有 Condition
 
