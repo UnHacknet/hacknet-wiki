@@ -49,7 +49,7 @@ OnDisconnect 会在从目标 Nodes 断开连接后触发。
 ```
 
 HasFlags 会在满足所有标志位时触发。
-- *`requiredFlags`*：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。默认值为空。为空则立即执行。
+- `requiredFlags`：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。默认值为空。为空则立即执行。
 
 参考：[SCHasFlags.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCHasFlags.cs)
 
