@@ -82,3 +82,9 @@ OnAdminGained 会在获取目标 Nodes 的管理员权限后触发。
 - `target`：`string`，描述目标 Nodes 的 `ComputerID`。
 
 参考：[SCOnAdminGained.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCOnAdminGained.cs)
+
+## 注意事项
+
+你可能在一些地方见到过 Condition `DoesNotHaveFlags`。它确实在 Hacknet 中有相关代码，但是没有在 Hacknet 中实装。
+
+参考：[SCDoesNotHaveFlags.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCDoesNotHaveFlags.cs) [SerializableCondition.cs#L50-L55](https://github.com/UnHacknet/OpenHacknet/blob/main/SerializableCondition.cs#L50-L55)
