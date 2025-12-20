@@ -71,7 +71,7 @@ Action 可以 实时改变游戏中的部分内容。
 > [!IMPORTANT]
 > 选填项的选填规则较为特殊。详情见：（WIP）HackerScript
 >
-> 当 HackerScript 作为立即执行的 StartingActions（ `Condition` 为 `Instantly`、不使用 Delay 或 Delay 时间为 `0`），会导致游戏内终端出现错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+> 当 HackerScript 作为立即执行的 StartingActions（ `Condition` 为 `Instantly`、不使用 Delay 或 Delay 时间为 `0`），会导致游戏内终端出现 `NullReferenceException`。
 
 具体使用详情见：（WIP）HackerScript
 
@@ -165,7 +165,7 @@ Note line 3</AddIRCMessage>
 - `TargetFolderpath`：`string`，目标 Nodes 的文件夹路径。
 
 > [!IMPORTANT]
-> Hacknet 不会判断 `FileName` 或 `FileContents` 是否存在。`FileName` 或 `FileContents` 没填会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+> Hacknet 不会判断 `FileName` 或 `FileContents` 是否存在。`FileName` 或 `FileContents` 没填会导致 `NullReferenceException`。
 
 参考：[SAAddAsset.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddAsset.cs)
 
@@ -181,7 +181,7 @@ Note line 3</AddIRCMessage>
 - 内容：追加到文件的内容。
 
 > [!IMPORTANT]
-> Hacknet 没有判断 `TargetComp`, `TargetFolderpath`, `TargetFilename` 是否存在。如果这些 attributes 不存在，会导致 错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+> Hacknet 没有判断 `TargetComp`, `TargetFolderpath`, `TargetFilename` 是否存在。如果这些 attributes 不存在，会导致 `NullReferenceException`。
 
 参考：[SAAppendToFile.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAppendToFile.cs)
 
@@ -196,7 +196,7 @@ Note line 3</AddIRCMessage>
 - `FileName`：`string`，文件名。
 
 > [!IMPROTANT]
-> `FilePath` 不填会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+> `FilePath` 不填会导致 `NullReferenceException`。
 
 参考：[SADeleteFile.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SADeleteFile.cs)
 
@@ -258,11 +258,11 @@ Note line 3</AddIRCMessage>
 | `"board"` | `messageBoard` |
 
 > [!IMPORTANT]
-> Hacknet 没有判断 `Target` 是否存在。如果 `Target` 不存在，会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+> Hacknet 没有判断 `Target` 是否存在。如果 `Target` 不存在，会导致 `NullReferenceException`。
 > 
 > Hacknet 也没有判断 Type 类型是否与关联的 Node 类型相同。如果 Type 类型与关联的 Node 类型不同，可能会导致游戏内 AlertIcon 无法正常使用。
 > 
-> 如果 ChangeAlertIcon 作为立即执行的 StartingActions（ `Condition` 为 `Instantly`、不使用 Delay 或 Delay 时间为 `0`），会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`
+> 如果 ChangeAlertIcon 作为立即执行的 StartingActions（ `Condition` 为 `Instantly`、不使用 Delay 或 Delay 时间为 `0`），会导致 `NullReferenceException`。
 
 参考：[SAChangeAlertIcon.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAChangeAlertIcon.cs)
 
