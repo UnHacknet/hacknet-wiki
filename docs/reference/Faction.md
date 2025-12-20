@@ -25,6 +25,8 @@ Faction 会使用 FactionAction 给 Action 设置条件。FactionAction 会根�
 ```xml
 <Action ValueRequired="1" Flags="flag1,flag2"></Action>
 ```
+FactionAction 类似一个特殊的 Condition。
+
 - `ValueRequired`：`int`，Rank > `ValueRequired` 时会执行 Action。默认值为 `10`。
 - *`Flags`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。
 
