@@ -9,8 +9,8 @@
 
 ## Code Of Conduct
 
-See [CODE_OF_CONDUCT.md](./code_of_conduct.md).
+See [code_of_conduct.md](./code_of_conduct.md).
 
 ## Contributing
 
-See [CONTRIBUTING.md](./contributing.md).
+See [contributing.md](./contributing.md).
