@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # ConditionalActions（条件行为）
 
 ConditionalActions 是使用 Action 的一种方法。
