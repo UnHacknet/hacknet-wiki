@@ -16,6 +16,9 @@ Action 可以 实时改变游戏中的部分内容。
 除了 Action `AddIRCMessage` 之外，所有可以延迟执行的 Action 都需要借助 DelayHost 延迟执行。
 
 示范中包含了 `Delay` 和 `DelayHost` 的 Action 是可以延迟执行的 Action。
+在此也使用 <Badge type="info" text="Delayable" /> 作为能够被 Delay 的提示。
+
+如果你想要延迟执行一个无法被 Delay 的 Action，你需要另写一个未被加载的 ConditionalActions 或使用 Faction 来实现。因为能延迟加载 ConditionalActions，所以能延迟执行其中的 Action。
 
 ## 所有 Action
 
@@ -29,7 +32,7 @@ Action 可以 实时改变游戏中的部分内容。
 - `MissionName`：`string`，Mission 的路径。
 参考：[SALoadMission.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SALoadMission.cs)
 
-### `AddConditionalActions`
+### `AddConditionalActions` <Badge type="info" text="Delayable" />
 
 ```xml
 <AddConditionalActions Filepath="Actions/NextAction.xml" DelayHost="delayNode" Delay="0"/>
@@ -37,7 +40,7 @@ Action 可以 实时改变游戏中的部分内容。
 加载 ConditionalActions。
 - `Filepath`：`string`，加载的 ConditionalActions 的文件路径。
 
-### `RunFunction`
+### `RunFunction` <Badge type="info" text="Delayable" />
 
 ```xml
 <RunFunction FunctionName="changeSong" FunctionValue="2" DelayHost="delayNode" Delay="1.0"/>
@@ -51,7 +54,7 @@ Action 可以 实时改变游戏中的部分内容。
 
 参考：[SARunFunction.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SARunFunction.cs)
 
-### `LaunchHackScript`
+### `LaunchHackScript` <Badge type="info" text="Delayable" />
 
 ```xml
 <LaunchHackScript Filepath="Scripts/HackerScript.txt" DelayHost="delayNode" Delay="0" SourceComp="SourceComp" TargetComp="TargetComp" RequireLogsOnSource="false" RequireSourceIntact="true"/>
@@ -114,7 +117,7 @@ Action 可以 实时改变游戏中的部分内容。
 
 参考：[SAAddThreadToMissionBoard.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddThreadToMissionBoard.cs)
 
-### `AddIRCMessage`
+### `AddIRCMessage` <Badge type="info" text="Delayable" />
 
 ```xml
 <AddIRCMessage Author="Kaguya" TargetComp="ircNode" Delay="1">HI</AddIRCMessage>
@@ -180,7 +183,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAAppendToFile.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAppendToFile.cs)
 
-### `DeleteFile`
+### `DeleteFile` <Badge type="info" text="Delayable" />
 
 ```xml
 <DeleteFile TargetComp="playerComp" FilePath="home" FileName="deleteme.txt" DelayHost="delayNode" Delay="0"/>
@@ -210,7 +213,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SACopyAsset.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SACopyAsset.cs)
 
-### `KillExe`
+### `KillExe` <Badge type="info" text="Delayable" />
 
 ```xml
 <KillExe DelayHost="delayNode" Delay="0" ExeName="*"/>
@@ -220,7 +223,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAKillExe.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAKillExe.cs)
 
-### `CrashComputer`
+### `CrashComputer` <Badge type="info" text="Delayable" />
 
 ```xml
 <CrashComputer TargetComp="playerComp" CrashSource="enemyNode" DelayHost="delayNode" Delay="0"/>
@@ -235,7 +238,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SACrashComputer.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SACrashComputer.cs)
 
-### `ChangeAlertIcon`
+### `ChangeAlertIcon` <Badge type="info" text="Delayable" />
 
 ```xml
 <ChangeAlertIcon Target="mainHub" Type="irchub" DelayHost="delayNode" Delay="0"/>
@@ -261,7 +264,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAChangeAlertIcon.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAChangeAlertIcon.cs)
 
-### `ShowNode`
+### `ShowNode` <Badge type="info" text="Delayable" />
 
 ```xml
 <ShowNode DelayHost="delayNode" Delay="0" Target="storageServer"/>
@@ -271,7 +274,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAShowNode.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAShowNode.cs)
 
-### `HideNode`
+### `HideNode` <Badge type="info" text="Delayable" />
 
 ```xml
 <HideNode DelayHost="delayNode" Delay="0" TargetComp="companySecurity"/>
@@ -281,7 +284,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAHideNode.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAHideNode.cs)
 
-### `HideAllNodes`
+### `HideAllNodes` <Badge type="info" text="Delayable" />
 
 ```xml
 <HideAllNodes DelayHost="delayNode" Delay="0"/>
@@ -290,7 +293,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SAHideAllNodes.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAHideAllNodes.cs)
 
-### `SwitchToTheme`
+### `SwitchToTheme` <Badge type="info" text="Delayable" />
 
 ```xml
 <SwitchToTheme ThemePathOrName="Themes/ExampleTheme.xml" FlickerInDuration="2.0" DelayHost="delayNode" Delay="0"/>
@@ -303,7 +306,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SASwitchToTheme.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SASwitchToTheme.cs)
 
-### `SetLock`
+### `SetLock` <Badge type="info" text="Delayable" />
 
 ```xml
 <SetLock DelayHost="delayNode" Delay="0" Module="terminal" IsLocked="true" IsHidden="false"/>
@@ -315,7 +318,7 @@ Note line 3</AddIRCMessage>
 
 参考：[SASetLock.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SASetLock.cs)
 
-### `StartScreenBleedEffect`
+### `StartScreenBleedEffect` <Badge type="info" text="Delayable" />
 
 ```xml
 <StartScreenBleedEffect AlertTitle="Sequencer Attack" CompleteAction="Actions/ScreenBleedFailed.xml" TotalDurationSeconds="200" DelayHost="delayNode" Delay="0">Break into the Moonshine servers
@@ -333,7 +336,7 @@ Get out of there!</StartScreenBleedEffect>
 
 参考：[SAScreenBleedEffect.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAScreenBleedEffect.cs)
 
-### `CancelScreenBleedEffect`
+### `CancelScreenBleedEffect` <Badge type="info" text="Delayable" />
 ```xml
 <CancelScreenBleedEffect DelayHost="delayNode" Delay="0"/>
 ```
@@ -341,7 +344,7 @@ Get out of there!</StartScreenBleedEffect>
 
 参考：[SACancelScreenBleedEffect.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SACancelScreenBleedEffect.cs)
 
-### `GivePlayerUserAccount`
+### `GivePlayerUserAccount` <Badge type="info" text="Delayable" />
 
 ```xml
 <GivePlayerUserAccount DelayHost="delayNode" Delay="0" TargetComp="teamHub" Username="#PLAYERNAME#"/>
@@ -352,7 +355,7 @@ Get out of there!</StartScreenBleedEffect>
 
 参考：[SAGivePlayerUserAccount.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAGivePlayerUserAccount.cs)
 
-### `ChangeIP`
+### `ChangeIP` <Badge type="info" text="Delayable" />
 
 ```xml
 <ChangeIP  DelayHost="delayNode" Delay="0" TargetComp="finalNode" NewIP="123.123.123.123"/>
@@ -363,7 +366,7 @@ Get out of there!</StartScreenBleedEffect>
 
 参考：[SAChangeIP.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAChangeIP.cs)
 
-### `SaveGame`
+### `SaveGame` <Badge type="info" text="Delayable" />
 
 ```xml
 <SaveGame DelayHost="delayNode" Delay="0"/>
