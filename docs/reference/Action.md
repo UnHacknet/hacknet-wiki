@@ -29,6 +29,8 @@ Action 可以 实时改变游戏中的部分内容。
 - `MissionName`：`string`，Mission 的路径。
 参考：[SALoadMission.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SALoadMission.cs)
 
+### `AddConditionalActions`
+
 ```xml
 <AddConditionalActions Filepath="Actions/NextAction.xml" DelayHost="delayNode" Delay="0"/>
 ```
@@ -70,22 +72,6 @@ Action 可以 实时改变游戏中的部分内容。
 
 参考：[SALaunchHackScript.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SALaunchHackScript.cs)
 
-
-### `AddAsset`
-
-```xml
-<AddAsset FileName="test" FileContents="test" TargetComp="playerComp" TargetFolderpath="home"/>
-```
-向目标 Nodes 添加一个 Asset
-- `FileName`：`string`，Asset 的文件名。
-- `FileContents`：`string`，Asset 的内容。
-- `TargetComp`：`string`，目标 Nodes 的 Component。
-- `TargetFolderpath`：`string`，目标 Nodes 的文件夹路径。
-
-> [!IMPORTANT]
-> Hacknet 不会判断 `FileName` 或 `FileContents` 是否存在。`FileName` 或 `FileContents` 没填会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
-
-参考：[SAAddAsset.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddAsset.cs)
 
 ### `AddMissionToHubServer`
 
@@ -162,7 +148,23 @@ Note line 3</AddIRCMessage>
 
 参考：[SAAddIRCMessage.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddIRCMessage.cs)
 
-### `AppendToFile`
+### `AddAsset`
+
+```xml
+<AddAsset FileName="test" FileContents="test" TargetComp="playerComp" TargetFolderpath="home"/>
+```
+向目标 Nodes 添加一个 Asset
+- `FileName`：`string`，Asset 的文件名。
+- `FileContents`：`string`，Asset 的内容。无法换行。
+- `TargetComp`：`string`，目标 Nodes 的 Component。
+- `TargetFolderpath`：`string`，目标 Nodes 的文件夹路径。
+
+> [!IMPORTANT]
+> Hacknet 不会判断 `FileName` 或 `FileContents` 是否存在。`FileName` 或 `FileContents` 没填会导致错误信息为 `Object reference not set to an instance of an object.` 的 `NullReferenceException`。
+
+参考：[SAAddAsset.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddAsset.cs)
+
+### `AppendToFile` <Badge type="info" text="Delayable" />
 
 ```xml
 <AppendToFile TargetComp="companyWhitelist" TargetFolderpath="Whitelist" TargetFilename="list.txt" DelayHost="delayNode" Delay="0">#PLAYER_IP#</AppendToFile>
