@@ -81,11 +81,11 @@ Action 可以 实时改变游戏中的部分内容。
 ### `AddMissionToHubServer`
 
 ```xml
-<AddMissionToHubServer MissionName="Missions/MyMission.xml" HubServerComp="missionHub" AssignmentTag="Kaguya" StartsComplete="true"/>
+<AddMissionToHubServer MissionName="Missions/MyMission.xml" TargetComp="missionHub" AssignmentTag="Kaguya" StartsComplete="true"/>
 ```
 将一个 Mission 添加到 MissionHub/DHS 的任务列表中。
 - `MissionName`：`string`，Mission 的文件路径。
-- `HubServerComp`：`string`，HubServer 的 ComputerID。
+- `TargetComp`：`string`，HubServer 的 ComputerID。
 - *`AssignmentTag`*?：`string`，分配Tag。如果是给 MissionHub 添加任务，用 `"top"` 就会使任务置顶。给 DHS 添加，就会提示分配给了谁。
 - *`StartsComplete`*?：`bool`，是否开始完成。默认值为 `false`。
 
