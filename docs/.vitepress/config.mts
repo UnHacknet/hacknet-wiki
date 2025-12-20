@@ -57,15 +57,15 @@ export default defineConfig({
               text: "Action & Faction",
               items: [
                 {
-                  text: "Action（行为）",
+                  text: "Action",
                   link: "/reference/Action",
                 },
                 {
-                  text: "ConditionalActions（条件行为）",
+                  text: "ConditionalActions",
                   link: "/reference/ConditionalActions",
                 },
                 {
-                  text: "Faction（派系）",
+                  text: "Faction",
                   link: "/reference/Faction",
                 },
               ],
