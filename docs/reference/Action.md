@@ -14,8 +14,11 @@ Action 可以 实时改变游戏中的部分内容。
 
 ## Delay
 
-部分 Action 可以通过设置 `Delay` 和 `DelayHost` 延迟执行。DelayHost 是任意一个拥有 `FastActionHost` Daemon 的 Node。
-除了 Action `AddIRCMessage` 之外，所有可以延迟执行的 Action 都需要借助 DelayHost 延迟执行。
+部分可以被 Delay 的 Action 可以通过设置 `Delay` 和 `DelayHost` 延迟执行。Hacknet 中 Action 的延迟执行需要借助 DelayHost 来实现。DelayHost 是任意一个拥有 `FastActionHost` Daemon 的 Node。`Delay` 和 `DelayHost`皆为选填属性。
+- *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。
+- *`DelayHost`*?：`string`，用于辅助延迟执行的 DelayHost。
+
+Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 Node 实现延迟执行。
 
 示范中包含了 `Delay` 和 `DelayHost` 的 Action 是可以延迟执行的 Action。
 在此也使用 <Badge type="info" text="Delayable" /> 作为能够被 Delay 的提示。
