@@ -54,8 +54,6 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 运行一个 Function
 - `FunctionName`：`string`，Function 的名称。
 - *`FunctionValue`*?：`string`，Function 的参数。
-- *`DelayHost`*?：`string`，延迟执行的 Host。
-- *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。
 
 参考：[SARunFunction.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SARunFunction.cs)
 
