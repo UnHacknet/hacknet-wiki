@@ -197,7 +197,7 @@ Note line 3</AddIRCMessage>
 - `FilePath`：`string`，文件路径。
 - `FileName`：`string`，文件名。
 
-> [!IMPROTANT]
+> [!IMPORTANT]
 > `FilePath` 不填会导致 `NullReferenceException`。
 
 参考：[SADeleteFile.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SADeleteFile.cs)
