@@ -70,6 +70,15 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              text: "Mission",
+              items: [
+                {
+                  text: "Mission",
+                  link: "/reference/Mission",
+                },
+              ],
+            },
           ],
         },
       ],
