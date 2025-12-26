@@ -22,6 +22,6 @@ IntroExtension/
 └── ExtensionInfo.xml
 ```
 
-Extension的一部分主要部分已经被文件夹分类好了：`Action`, `Doc`, `Faction`, `HackerScript`, `Mission`, `Node` (`Computer`), `People`, `Theme`, `Asset`（包括了 `Music`, `Web` 和图片）。除了这些还有 `Function`（别名 `MissionFunction`）。
+Extension的一部分主要部分已经被文件夹分类好了：`Action`, `Doc`, `HackerScript`, `Mission`, `Node` (`Computer`), `People`, `Theme`, `Asset`（包括了 `Music`, `Web` 和图片）。除了这些还有 `Function`（别名 `MissionFunction`）。
 
-在后续的教程中，我们会介绍每个组成部分的作用和使用方法。
+不需要记住这些，因为在后续的教程中，我们会介绍每个组成部分的作用和使用方法。
