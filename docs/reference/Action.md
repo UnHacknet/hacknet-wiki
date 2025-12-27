@@ -64,8 +64,8 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ```
 执行 HackerScript。
 - `Filepath`：`string`，HackerScript 文件的路径。
-- *`SourceComp`*?：`string`，攻击源 Node 的 ComputerID。
-- *`TargetComp`*?：`string`，目标 Node 的 ComputerID。
+- *`SourceComp`*?：`string`，攻击源 Node 的 Computer ID。
+- *`TargetComp`*?：`string`，目标 Node 的 Computer ID。
 - *`RequireLogsOnSource`*?：`bool`，目标 Node 是否需要在攻击源节点上留下日志。默认值为 `false`。
 - *`RequireSourceIntact`*?：`bool`，攻击源 Node 系统文件 `netcfgx.dll` 是否需要完好无损。默认值为 `false`。
 
@@ -86,7 +86,7 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ```
 将一个 Mission 添加到 MissionHub/DHS 的任务列表中。
 - `MissionName`：`string`，Mission 的文件路径。
-- `TargetComp`：`string`，HubServer 的 ComputerID。
+- `TargetComp`：`string`，HubServer 的 Computer ID。
 - *`AssignmentTag`*?：`string`，分配Tag。如果是给 MissionHub 添加任务，用 `"top"` 就会使任务置顶。给 DHS 添加，就会提示分配给了谁。
 - *`StartsComplete`*?：`bool`，是否开始完成。默认值为 `false`。
 
@@ -102,7 +102,7 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ```
 将一个 Mission 从 HubServer 移除
 - `MissionFilepath`：`string`，Mission 的文件路径。
-- `TargetComp`：`string`，HubServer 的 ComputerID。
+- `TargetComp`：`string`，HubServer 的 Computer ID。
 
 > [!NOTE]
 > HubServer 是拥有 `missionListingServer`, `missionHubServer` 或 `DHSDaemon` Daemon 的 Node，在游戏中作为“任务中心”。
@@ -116,7 +116,7 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ```
 将一个 Thread 添加到 MessageBoard（虽然 Action 的名称里面是 MissionBoard）。MessageBoard 服务器是拥有 `messageBoard` Daemon 的 Node。
 - `ThreadFilepath`：`string`，Thread 的文件路径。
-- `TargetComp`：`string`，MessageBoard 服务器的 ComputerID。
+- `TargetComp`：`string`，MessageBoard 服务器的 Computer ID。
 
 参考：[SAAddThreadToMissionBoard.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddThreadToMissionBoard.cs)
 
@@ -127,7 +127,7 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ```
 将一条 IRC 消息发送到指定的 IRC 服务器。IRC 服务器是拥有 `IRCDaemon` 或 `DHSDaemon` Daemon 的 Node。
 - *`Author`*?：`string`，消息的发送者。默认为 `""`。
-- `TargetComp`：`string`，IRC 服务器的 ComputerID。
+- `TargetComp`：`string`，IRC 服务器的 Computer ID。
 - *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。AddIRCMessage 不需要通过 `DelayHost` 延迟执行。
 - 内容：消息的内容。
 
@@ -177,7 +177,7 @@ Note line 3</AddIRCMessage>
 <AppendToFile TargetComp="companyWhitelist" TargetFolderpath="Whitelist" TargetFilename="list.txt" DelayHost="delayNode" Delay="0">#PLAYER_IP#</AppendToFile>
 ```
 向文件追加内容。
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 - `TargetFolderpath`：`string`，目标文件的路径。
 - `TargetFilename`：`string`，目标文件的文件名。
 - 内容：追加到文件的内容。
@@ -193,7 +193,7 @@ Note line 3</AddIRCMessage>
 <DeleteFile TargetComp="playerComp" FilePath="home" FileName="deleteme.txt" DelayHost="delayNode" Delay="0"/>
 ```
 删除文件。
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 - `FilePath`：`string`，文件路径。
 - `FileName`：`string`，文件名。
 
@@ -210,8 +210,8 @@ Note line 3</AddIRCMessage>
 复制文件。
 - `DestFilePath`：`string`，目标文件路径。
 - *`DestFileName`*?：`string`，目标文件的文件名。默认用 `SourceFileName` 的值。
-- `DestComp`：`string`，目标 Node 的 ComputerID。
-- `SourceComp`：`string`，源 Node 的 ComputerID。
+- `DestComp`：`string`，目标 Node 的 Computer ID。
+- `SourceComp`：`string`，源 Node 的 Computer ID。
 - `SourceFileName`：`string`，源文件的文件名。
 - `SourceFilePath`：`string`，源文件的路径。
 
@@ -234,8 +234,8 @@ Note line 3</AddIRCMessage>
 ```
 
 使目标 Node 被 Forkbomb
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
-- `CrashSource`：`string`，攻击者 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
+- `CrashSource`：`string`，攻击者 Node 的 Computer ID。
 
 > [!NOTE]
 > 其实 `TargetComp` 和 `CrashSource` 都是选填，当 `TargetComp` 存在时 `CrashSource` 必填。不填 `TargetComp` 啥也不发生。
@@ -248,7 +248,7 @@ Note line 3</AddIRCMessage>
 <ChangeAlertIcon Target="mainHub" Type="irchub" DelayHost="delayNode" Delay="0"/>
 ```
 更改 AlertIcon（右上角的图标）以及其关联的 Node。
-- `Target`：`string`，关联的 Node 的 ComputerID。
+- `Target`：`string`，关联的 Node 的 Computer ID。
 - `Type`：`"mail" | "irc" | "irchub" | "board"`，AlertIcon 的类型，需要与关联的 Node 类型相同。默认值为 `""`。`""` 表示不更改 AlertIcon。
 
 类型与关联的 Node 所使用的 Daemon 的对应关系：
@@ -274,7 +274,7 @@ Note line 3</AddIRCMessage>
 <ShowNode DelayHost="delayNode" Delay="0" Target="storageServer"/>
 ```
 显示指定的 Node。
-- `Target`：`string`，目标 Node 的 ComputerID。
+- `Target`：`string`，目标 Node 的 Computer ID。
 
 参考：[SAShowNode.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAShowNode.cs)
 
@@ -284,7 +284,7 @@ Note line 3</AddIRCMessage>
 <HideNode DelayHost="delayNode" Delay="0" TargetComp="companySecurity"/>
 ```
 隐藏指定的 Node。
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 
 参考：[SAHideNode.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAHideNode.cs)
 
@@ -354,7 +354,7 @@ Get out of there!</StartScreenBleedEffect>
 <GivePlayerUserAccount DelayHost="delayNode" Delay="0" TargetComp="teamHub" Username="#PLAYERNAME#"/>
 ```
 给予玩家某节点的账号。可以在登录页面直接使用。
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 - `Username`：`string`，用户名。
 
 参考：[SAGivePlayerUserAccount.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAGivePlayerUserAccount.cs)
@@ -365,7 +365,7 @@ Get out of there!</StartScreenBleedEffect>
 <ChangeIP  DelayHost="delayNode" Delay="0" TargetComp="finalNode" NewIP="123.123.123.123"/>
 ```
 更改指定 Node 的 IP 地址。
-- `TargetComp`：`string`，目标 Node 的 ComputerID。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 - *`NewIP`*?：`string`，新的 IP 地址。如果不填、为空或者以`#RANDOM`开头，会随机生成一个 IP 地址。
 
 参考：[SAChangeIP.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAChangeIP.cs)
