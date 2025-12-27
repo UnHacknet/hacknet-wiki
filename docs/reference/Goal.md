@@ -21,6 +21,11 @@ Goal 描述 Mission 的完成条件。
 </mission>
 ```
 
+不使用 Goal 可以留空：
+```xml
+<goals></goals>
+```
+
 ## 所有 Goal
 
 所有 Goal 都有 `type` 属性，类型为 `string`，用于表示 Goal 的类型。
