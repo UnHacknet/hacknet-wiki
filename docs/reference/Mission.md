@@ -10,7 +10,7 @@ outline: deep
   <!-- Goal -->
   <goals>...</goals>
 
-  <!-- MissionStart/MissionEnd -->
+  <!-- MissionStart & MissionEnd -->
   <missionStart val="7">changeSong</missionStart>
   <missionEnd>addRank</missionEnd>
 
