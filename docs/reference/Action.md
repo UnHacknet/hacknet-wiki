@@ -160,11 +160,11 @@ Note line 3</AddIRCMessage>
 ```xml
 <AddAsset FileName="test" FileContents="test" TargetComp="playerComp" TargetFolderpath="home"/>
 ```
-向目标 Nodes 添加一个 Asset
+向目标 Node 添加一个 Asset
 - `FileName`：`string`，Asset 的文件名。
 - `FileContents`：`string`，Asset 的内容。无法换行。
-- `TargetComp`：`string`，目标 Nodes 的 Component。
-- `TargetFolderpath`：`string`，目标 Nodes 的文件夹路径。
+- `TargetComp`：`string`，目标 Node 的 Component。
+- `TargetFolderpath`：`string`，目标 Node 的文件夹路径。
 
 > [!IMPORTANT]
 > Hacknet 不会判断 `FileName` 或 `FileContents` 是否存在。`FileName` 或 `FileContents` 没填会导致 `NullReferenceException`。
