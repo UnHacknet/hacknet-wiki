@@ -3,10 +3,12 @@ outline: deep
 ---
 # Goal （目标）
 
-Goal 描述 Mission 的完成条件。所有 Goal 都是 `<goals>` 的子元素。
+Goal 描述 Mission 的完成条件。
+
+所有 Goal 都是 `<goals>` 的子元素。XML 结构示范如下：
 
 ```xml
-<mission id="testMission" activeCheck="true" shouldIgnoreSenderVerification="false">
+<mission>
   
   <goals>
     <!-- Goal -->
