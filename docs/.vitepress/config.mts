@@ -81,6 +81,14 @@ export default defineConfig({
                   text: "Goal",
                   link: "/reference/Goal",
                 },
+                {
+                  text: "BranchMissions",
+                  link: "/reference/BranchMissions",
+                },
+                {
+                  text: "MissionEmail",
+                  link: "/reference/MissionEmail",
+                },
               ],
             },
           ],
