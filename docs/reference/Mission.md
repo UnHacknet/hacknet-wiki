@@ -28,6 +28,9 @@ outline: deep
 </mission>
 ```
 
+> [!NOTE]
+> 不要修改 `<mission>` 元素 的 子元素 的顺序。
+
 ```xml
 <mission id="testMission" activeCheck="true" shouldIgnoreSenderVerification="false"></mission>
 ```
