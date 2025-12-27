@@ -44,7 +44,7 @@ ConditionalActions 会使用 Condition 给 Action 设置条件。ConditionalActi
 ```
 
 OnConnect 会在连接到目标 Nodes 后触发。
-- `target`：`string`，描述目标 Nodes 的 `ComputerID`。
+- `target`：`string`，描述目标 Nodes 的 Computer ID。
 - *`needsMissionComplete`*?：`bool`，描述是否需要处于任务完成状态才能触发。默认值为 `false`。
 - *`requiredFlags`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。与 `HasFlags` 不同，为空或不填则不检查Flags。
 
@@ -57,7 +57,7 @@ OnConnect 会在连接到目标 Nodes 后触发。
 ```
 
 OnDisconnect 会在从目标 Nodes 断开连接后触发。
-- `target`：`string`，描述目标 Nodes 的 `ComputerID`。
+- `target`：`string`，描述目标 Nodes 的 Computer ID。
 
 > [!WARNING]
 > `target` 如果填 `playerComp`，那么在连接到 `playerComp` 时也会触发。因为 `disconnect` 的本质，其实就是连接到 `playerComp`。
@@ -82,7 +82,7 @@ HasFlags 会在满足所有标志位时触发。
 ```
 
 OnAdminGained 会在获取目标 Nodes 的管理员权限后触发。
-- `target`：`string`，描述目标 Nodes 的 `ComputerID`。
+- `target`：`string`，描述目标 Nodes 的 Computer ID。
 
 参考：[SCOnAdminGained.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCOnAdminGained.cs)
 
