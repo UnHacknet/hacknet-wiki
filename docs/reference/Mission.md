@@ -3,7 +3,7 @@ outline: deep
 ---
 # Mission （任务）
 
-Mission 的大致结构如下：
+描述 Mission 的 XML 结构大致如下：
 ```xml
 <mission id="testMission" activeCheck="true" shouldIgnoreSenderVerification="false">
 
