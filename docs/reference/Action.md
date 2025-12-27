@@ -163,7 +163,7 @@ Note line 3</AddIRCMessage>
 向目标 Node 添加一个 Asset
 - `FileName`：`string`，Asset 的文件名。
 - `FileContents`：`string`，Asset 的内容。无法换行。
-- `TargetComp`：`string`，目标 Node 的 Component。
+- `TargetComp`：`string`，目标 Node 的 Computer ID。
 - `TargetFolderpath`：`string`，目标 Node 的文件夹路径。
 
 > [!IMPORTANT]
