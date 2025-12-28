@@ -9,6 +9,11 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {
+    footer: {
+      message:
+        "Code is licensed under the MIT License. Documentation is licensed under the CC BY-SA 4.0 License.",
+      copyright: "Copyright © 2025 FBIK. All rights reserved.",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
