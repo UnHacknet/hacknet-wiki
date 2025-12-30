@@ -6,9 +6,12 @@ outline: deep
 在开发 Hacknet Extension 之前，你需要做一些准备以下内容来提高你的扩展开发效率。
 
 - 最新版 Hacknet 与可以运行它的电脑。
-- 一个文本编辑器。推荐使用 [Visual Studio Code](https://code.visualstudio.com/)，
-因为它不仅支持 XML 语法高亮，
-还可以使用 [Hacknet-VSCode](https://github.com/AutumnRivers/hacknet-vscode) 的片段补全，以及使用 [HacknetExtensionEditor](https://github.com/fengxu-30338/HacknetExtensionEditor) 来提高效率。
+- 一个文本编辑器。
+
+> [!NOTE]
+> 推荐使用 [Visual Studio Code](https://code.visualstudio.com/)，
+> 因为它不仅可以做到 XML 的高亮与语法检查。
+> 在**后期正式进行扩展开发的时候**也可以使用 [Hacknet-VSCode](https://github.com/AutumnRivers/hacknet-vscode) 的片段补全，或更先进的 [HacknetExtensionEditor](https://github.com/fengxu-30338/HacknetExtensionEditor) 来提高扩展开发效率。
 
 ## 创建项目
 
