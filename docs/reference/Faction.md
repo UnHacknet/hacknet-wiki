@@ -2,7 +2,9 @@
 
 Faction 是使用 Action 的一种方法。与 ConditionalActions 的区别主要在条件不同。
 
-Faction 会使用 FactionAction 给 Action 设置条件。FactionAction 会根据玩家在该 Faction 中的 Rank（排名，游戏内又叫做 Point（积分））来决定是否执行它的 Action。
+Faction 会使用 FactionAction 给 Action 设置条件。FactionAction 可以根据玩家在该 Faction 中的 Rank（排名，游戏内又叫做 Point（积分））来决定是否执行它的 Action。
+
+与 ConditionalActions 不同，Faction 不可以随时加载，而只能在游戏开始的时候加载。
 
 描述 Faction 的 XML 结构如下：
 ```xml
