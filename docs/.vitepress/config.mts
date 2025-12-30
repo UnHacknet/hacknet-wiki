@@ -9,6 +9,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   themeConfig: {
+    outline: "deep",
     footer: {
       message:
         "Code is licensed under the MIT License. Documentation is licensed under the CC BY-SA 4.0 License.",
