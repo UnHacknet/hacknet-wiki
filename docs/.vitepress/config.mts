@@ -50,6 +50,19 @@ export default defineConfig({
             { text: "项目结构", link: "/extension-tutorial/structure" },
           ],
         },
+        {
+          text: "Mission",
+          items: [
+            {
+              text: "Mission",
+              link: "/extension-tutorial/Mission",
+            },
+            {
+              text: "Goal",
+              link: "/extension-tutorial/Goal",
+            },
+          ],
+        },
       ],
       "/reference": [
         {
