@@ -6,13 +6,13 @@ import RainbowText from './components/RainbowText.vue'
 
 这里汇总了 Hacknet 使用及 Extension 开发过程中的常见问题。
 
-## Q：玩 Hacknet 算入门黑客吗？
+## Q：玩 Hacknet 算入门黑客吗？{#q-can-i-be-hacker}
 
 ::: details A：（点击展开）
 <RainbowText>不算</RainbowText>
 :::
 
-## Q：现实中存在类似 PortHack 的工具吗？
+## Q：现实中存在类似 PortHack 的工具吗？{#q-port-hack-exists}
 ::: details A：（点击展开）
 <RainbowText>没有</RainbowText>
 :::
