@@ -29,7 +29,7 @@ Goal 用于定义 Mission 的完成条件。以下是 *初次联系* 的片段�
 
 ## 小试牛刀
 
-参考 [参考：Goal](/reference/Goal.md)，写一段`<goals>`片段，要求任务目标如下：
+阅读 [参考：Goal](/reference/Goal.md)，写一段`<goals>`片段，要求任务目标如下：
 - 删除玩家电脑（Computer ID 是 `playerComp`）中 `sys` 目录下的 `x-server.sys` 文件。
 - 要求玩家回复内容：`ohyeah`。
 
