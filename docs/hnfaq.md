@@ -25,4 +25,7 @@ import RainbowText from './components/RainbowText.vue'
 如果不是，你可以想办法找到 Hacknet 的快捷方式，或者启动 Hacknet 后在任务栏的 Hacknet 处右键——右键Hacknet——属性，然后查看目标或者“打开文件所在位置”。
 :::
 
-## 启动
+## 游戏打开黑屏/崩溃/慢 {#common-problem-from-steam}
+
+见：https://steamcommunity.com/app/365450/discussions/0/451850849198782888/ 或它的中文翻译 https://steamcommunity.com/app/365450/discussions/0/343788552553568633/
+
