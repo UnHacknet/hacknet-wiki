@@ -131,6 +131,9 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 - *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。AddIRCMessage 不需要通过 `DelayHost` 延迟执行。
 - 内容：消息的内容。
 
+> [!IMPORTANT]
+> 内容 不能为空
+
 消息内容支持添加附件。
 
 添加 note 附件：
