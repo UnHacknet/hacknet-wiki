@@ -12,7 +12,7 @@ export default defineConfig({
     outline: "deep",
     footer: {
       message:
-        "Code is licensed under the MIT License. Documentation is licensed under the CC BY-SA 4.0 License.",
+        "Code is licensed under the MIT License. Documentation is licensed under the CC BY-NC-SA 4.0 License.",
       copyright: "Copyright © 2025 FBIK. All rights reserved.",
     },
     // https://vitepress.dev/reference/default-theme-config
