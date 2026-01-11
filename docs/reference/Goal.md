@@ -3,6 +3,8 @@ outline: deep
 ---
 # Goal （目标）
 
+教程见 [教程：Goal](../extension-tutorial/Goal.md)
+
 Goal 描述 Mission 的完成条件。
 
 所有 Goal 都是 `<goals>` 的子元素。XML 结构示范如下：
