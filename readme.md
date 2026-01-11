@@ -17,4 +17,4 @@ See [contributing.md](./contributing.md).
 
 ## License
 
-Code is licensed under the [MIT License](./LICENSE.MIT). Documentation is licensed under the [CC BY-SA 4.0 License](./LICENSE).
+Code is licensed under the [MIT License](./LICENSE.MIT). Documentation is licensed under the [CC BY-NC-SA 4.0 License](./LICENSE).
