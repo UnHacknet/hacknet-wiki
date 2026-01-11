@@ -3,6 +3,8 @@ outline: deep
 ---
 # Mission （任务）
 
+教程见 [教程：Mission](../extension-tutorial/Mission.md)
+
 描述 Mission 的 XML 结构大致如下：
 ```xml
 <mission id="testMission" activeCheck="true" shouldIgnoreSenderVerification="false">
