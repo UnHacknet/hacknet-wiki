@@ -11,6 +11,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@catppuccin/vitepress": "^0.1.2",
     "@shikijs/transformers": "^3.19.0"
   }
 }
