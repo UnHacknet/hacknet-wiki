@@ -61,6 +61,10 @@ export default defineConfig({
               text: "Goal",
               link: "/extension-tutorial/Goal",
             },
+            {
+              text: "BranchMissions",
+              link: "/extension-tutorial/BranchMissions",
+            },
           ],
         },
       ],
