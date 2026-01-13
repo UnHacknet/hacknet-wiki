@@ -20,6 +20,8 @@ Action 可以 实时改变游戏中的部分内容。
 
 Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 Node 实现延迟执行。
 
+除了 `AddIRCMessage` 的 Delay 小于 `0` 有特殊作用外，其他类型的 Action 的 Delay 小于等于 `0` 相当于立即执行。
+
 示范中包含了 `Delay` 和 `DelayHost` 的 Action 是可以延迟执行的 Action。
 在此也使用 <Badge type="info" text="Delayable" /> 作为能够被 Delay 的提示。
 
@@ -128,7 +130,9 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 将一条 IRC 消息发送到指定的 IRC 服务器。IRC 服务器是拥有 `IRCDaemon` 或 `DHSDaemon` Daemon 的 Node。
 - *`Author`*?：`string`，消息的发送者。默认为 `""`。
 - `TargetComp`：`string`，IRC 服务器的 Computer ID。
-- *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。AddIRCMessage 不需要通过 `DelayHost` 延迟执行。
+- *`Delay`*?：`float`，延迟执行的时间。默认值为 `0.0`。
+  - AddIRCMessage 不需要通过 `DelayHost` 延迟执行。
+  - 小于 `0` 时将会给过去的时间添加 IRC 消息。
 - 内容：消息的内容。
 
 > [!IMPORTANT]
