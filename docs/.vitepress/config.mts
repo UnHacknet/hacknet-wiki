@@ -12,7 +12,7 @@ export default defineConfig({
     outline: "deep",
     footer: {
       message:
-        "Code is licensed under the MIT License. Documentation is licensed under the CC BY-NC-SA 4.0 License.",
+        'Documentation is licensed under the CC BY-NC-SA 4.0 License.<br/> <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2026007027号-1</a>',
       copyright: "Copyright © 2025 FBIK. All rights reserved.",
     },
     // https://vitepress.dev/reference/default-theme-config
