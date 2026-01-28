@@ -129,7 +129,7 @@ export default defineConfig({
     editLink: {
       pattern:
         "https://github.com/UnHacknet/hacknet-wiki/blob/master/docs/:path",
-      text: "在 GitHub 上查看此页",
+      text: "在 GitHub 上查看或编辑此页",
     },
   },
 
