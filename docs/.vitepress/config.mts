@@ -12,7 +12,7 @@ export default defineConfig({
     outline: "deep",
     footer: {
       message: `Documentation is licensed under the CC BY-NC-SA 4.0 License. <br/>
-<img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" width="16px" style="display:inline-block;vertical-align: middle;margin: 0 auto;"/>
+<img src="/logo01.6189a29f.png" width="16px" style="display:inline-block;vertical-align: middle;margin: 0 auto;"/>
 <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002010424" rel="noreferrer" target="_blank">粤公网安备44030002010424号</a>&nbsp;
 <a href="https://beian.miit.gov.cn/" rel="noreferrer" target="_blank">粤ICP备2026007027号-1</a>`,
       copyright: "Copyright © 2025 FBIK. All rights reserved.",
