@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
-    "@shikijs/transformers": "^3.22.0"
+    "@shikijs/transformers": "^3.22.0",
+    "vitepress-plugin-llms": "^1.11.0"
   }
 }

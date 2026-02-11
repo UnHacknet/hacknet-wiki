@@ -1,8 +1,13 @@
 import { defineConfig } from "vitepress";
 import { transformerNotationMap } from "@shikijs/transformers";
+import llmstxt from "vitepress-plugin-llms";
+import { copyOrDownloadAsMarkdownButtons } from "vitepress-plugin-llms";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [llmstxt()],
+  },
   title: "Hacknet.wiki",
   description: "Hacknet (Extension) 文档中心",
   lang: "zh-CN",
@@ -145,5 +150,9 @@ export default defineConfig({
         matchAlgorithm: "v3",
       }),
     ],
+
+    config(md) {
+      md.use(copyOrDownloadAsMarkdownButtons);
+    },
   },
 });
