@@ -30,6 +30,6 @@ Faction 会使用 FactionAction 给 Action 设置条件。FactionAction 可以�
 FactionAction 类似一个特殊的 Condition。
 
 - `ValueRequired`：`int`，Rank > `ValueRequired` 时会执行 Action。默认值为 `10`。
-- *`Flags`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。
+- *`Flags`*?：`string`，描述需要满足的 flags 。多个 flags 之间用逗号 `,` 分隔。
 
 参考：[CustomFactionAction.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/Factions/CustomFactionAction.cs)

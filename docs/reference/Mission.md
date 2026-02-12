@@ -99,7 +99,7 @@ Once accepted, the email should contain full details.
 ```
 当 Mission 添加进 MissionHub 时，在 MissionHub 的任务列表中会显示的内容。
 - *`title`*?：`string`，任务的标题。
-- *`reqs`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。
+- *`reqs`*?：`string`，描述需要满足的 flags 。多个 flags 之间用逗号 `,` 分隔。
 - *`requiredRank`*?：`int`，需要达到的 Rank。如果玩家当前不属于任何 `Faction`，则无用。
 - 内容：任务的描述。
 

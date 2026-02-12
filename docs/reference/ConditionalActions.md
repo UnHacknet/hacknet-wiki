@@ -46,7 +46,7 @@ ConditionalActions 会使用 Condition 给 Action 设置条件。ConditionalActi
 OnConnect 会在连接到目标 Node 后触发。
 - `target`：`string`，描述目标 Node 的 Computer ID。
 - *`needsMissionComplete`*?：`bool`，描述是否需要处于任务完成状态才能触发。默认值为 `false`。
-- *`requiredFlags`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。与 `HasFlags` 不同，为空或不填则不检查Flags。
+- *`requiredFlags`*?：`string`，描述需要满足的 flags 。多个 flags 之间用逗号 `,` 分隔。与 `HasFlags` 不同，为空或不填则不检查Flags。
 
 参考：[SCOnConnect.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCOnConnect.cs)
 
@@ -70,8 +70,8 @@ OnDisconnect 会在从目标 Node 断开连接后触发。
 <HasFlags requiredFlags="flag1,flag2"></HasFlags>
 ```
 
-HasFlags 会在满足所有标志位时触发。
-- *`requiredFlags`*?：`string`，描述需要满足的标志位。多个标志位之间用逗号 `,` 分隔。为空或不填则立即执行。
+HasFlags 会在满足所有 flags 时触发。
+- *`requiredFlags`*?：`string`，描述需要满足的 flags 。多个 flags 之间用逗号 `,` 分隔。为空或不填则立即执行。
 
 参考：[SCHasFlags.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SCHasFlags.cs)
 

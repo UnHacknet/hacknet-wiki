@@ -62,7 +62,7 @@ Function 通过 Mission 中的 [`missionStart`](./Mission.md#missionstart) 或 [
 <RunFunction FunctionName="addFlags:flag1,flag2"/>
 ```
 添加 Flags。
-- 文本参数：Flags 名称。多个标志位之间用 `,` 分隔。
+- 文本参数：Flags 名称。多个 flags 之间用 `,` 分隔。
 
 ### `removeFlags`
 
@@ -70,7 +70,7 @@ Function 通过 Mission 中的 [`missionStart`](./Mission.md#missionstart) 或 [
 <RunFunction FunctionName="removeFlags:flag1,flag2"/>
 ```
 移除 Flags。
-- 文本参数：Flags 名称。多个标志位之间用 `,` 分隔。
+- 文本参数：Flags 名称。多个 flags 之间用 `,` 分隔。
 
 ### `changeSong`
 
