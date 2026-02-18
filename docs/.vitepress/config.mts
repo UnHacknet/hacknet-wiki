@@ -28,6 +28,7 @@ export default defineConfig({
       { text: "Extension 教程", link: "/extension-tutorial" },
       { text: "参考文档", link: "/reference" },
       { text: "常见问题", link: "/hnfaq" },
+      { text: "Awesome", link: "https://awesome.hacknet.wiki" },
       {
         text: "关于",
         items: [
