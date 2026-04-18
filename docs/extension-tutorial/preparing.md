@@ -3,15 +3,15 @@ outline: deep
 ---
 # 准备工作
 
-在开发 Hacknet Extension 之前，你需要做一些准备以下内容来提高你的扩展开发效率。
+你需要准备的内容如下：
 
 - 最新版 Hacknet 与可以运行它的电脑。
 - 一个文本编辑器。
 
 > [!NOTE]
-> 推荐使用 [Visual Studio Code](https://code.visualstudio.com/)，
-> 因为它不仅可以做到 XML 的高亮与语法检查。
-> 在**后期正式进行扩展开发的时候**也可以使用 [Hacknet-VSCode](https://github.com/AutumnRivers/hacknet-vscode) 的片段补全，或更先进的 [HacknetExtensionEditor](https://github.com/fengxu-30338/HacknetExtensionEditor) 来提高扩展开发效率。
+> 推荐使用 [Visual Studio Code/VSCode](https://code.visualstudio.com/) 来进行 Hacknet Extension 开发。因为它不仅可以做到 XML 的高亮与语法检查，还有 [AutumnRivers/hacknet-vscode](https://github.com/AutumnRivers/hacknet-vscode) 和 [fengxu-30338/HacknetExtensionEditor](https://github.com/fengxu-30338/HacknetExtensionEditor) 能够提高扩展开发效率。这两个插件需要对 Hacknet Extension 有一定了解。会在后续章节介绍，暂时不需要安装。
+> 
+> 你需要在 VSCode 中安装 [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) 插件来获得 XML 语法检查等能力。
 
 ## 创建项目
 
@@ -24,7 +24,7 @@ outline: deep
 复制一份 `Hacknet/BlankExtension/` 并改名，将副本里面的 `EDIT_ME_ExtensionInfo.xml` 改为 `ExtensionInfo.xml`。后面内容以 `MyFirstExtension` 为例。
 
 ```cmd
-; 注：这只是 bash 命令的示例，你可以使用你习惯的电脑操作逻辑来创建项目。
+; 注：这只是 cmd 命令的示例，你可以使用你习惯的电脑操作逻辑来创建项目。
 cd Hacknet\Extensions\
 cp -r BlankExtension MyFirstExtension
 cd MyFirstExtension
