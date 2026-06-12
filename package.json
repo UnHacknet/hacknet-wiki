@@ -1,7 +1,7 @@
 {
   "private": true,
   "devDependencies": {
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.4",
     "vitepress": "2.0.0-alpha.16"
   },
   "scripts": {
@@ -13,6 +13,6 @@
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
     "@shikijs/transformers": "^3.23.0",
-    "vitepress-plugin-llms": "^1.12.0"
+    "vitepress-plugin-llms": "^1.13.1"
   }
 }
