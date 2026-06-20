@@ -304,6 +304,20 @@ Note line 3</AddIRCMessage>
 
 参考：[SAHideAllNodes.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAHideAllNodes.cs)
 
+### `ChangeNetmapSortMethod` <Badge type="info" text="Delayable" />
+```xml
+<ChangeNetmapSortMethod Method="scatter" DelayHost="delayNode" Delay="0" />
+```
+切换 Netmap 排序方式。
+- *`Method`*?: 值与对应排序方式如下：
+
+| Method | 排序方式 |
+| --- | --- |
+| `scatter` | 散点图 |
+| `grid` / 默认 | 网格图 |
+| `seqgrid` / `scangrid` / `sequencegrid` / `sequence grid` | 扫描序列网格 |
+| `chaos` | 混乱 |
+
 ### `SwitchToTheme` <Badge type="info" text="Delayable" />
 
 ```xml
