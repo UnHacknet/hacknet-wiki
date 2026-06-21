@@ -1,6 +1,8 @@
 # Faction（阵营）
 
-Faction 是使用 Action 的一种方法。与 ConditionalActions 的区别主要在条件不同。
+Faction 是使用 Action 的一种方法。与 ConditionalActions 的区别主要在于**条件不同**。
+
+Faction 在一些参考资料里面也被翻译为 派系 。阵营更直观一些，故在本站采取 阵营 翻译。
 
 Faction 会使用 FactionAction 给 Action 设置条件。FactionAction 可以根据玩家在该 Faction 中的 Rank（排名，游戏内又叫做 Point（积分））来决定是否执行它的 Action。
 
