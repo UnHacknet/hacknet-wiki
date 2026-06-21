@@ -4,6 +4,10 @@
 
 目前处于开发早期阶段，先以内容更新为主。
 
+如果你想在线编辑，推荐使用以下方法：
+- 使用 VSCode 网页版: https://vscode.dev/github/UnHacknet/hacknet-wiki/ 。也可以在 https://github.com/UnHacknet/hacknet-wiki 页面点击键盘上的 <kbd>.></kbd> 键。
+- 在 Stackblitz 中打开: https://pr.new/github/UnHacknet/hacknet-wiki/ 。相比于前者可以在浏览器启动 vitepress 环境从而实时预览。
+
 ## Pull Request 基本要求
 
 ### 文档内容
