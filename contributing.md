@@ -2,7 +2,9 @@
 
 感谢你对 Hacknet.wiki 添砖加瓦！
 
-目前处于开发早期阶段，先以内容更新为主。
+目前处于开发早期阶段，建议以内容更新为主。
+
+如果你想要在长时间内撰写某一部分，可以创建一个 Issue，Type 选择为 Task，方便交流和让大家知道你的工作。
 
 如果你想在线编辑，推荐使用以下方法：
 - 使用 VSCode 网页版: https://vscode.dev/github/UnHacknet/hacknet-wiki/ 。也可以在 https://github.com/UnHacknet/hacknet-wiki 页面点击键盘上的 <kbd>.></kbd> 键。
