@@ -13,6 +13,6 @@
   "dependencies": {
     "@catppuccin/vitepress": "^0.1.2",
     "@shikijs/transformers": "^3.23.0",
-    "vitepress-plugin-llms": "^1.13.1"
+    "vitepress-plugin-llms": "^1.13.2"
   }
 }

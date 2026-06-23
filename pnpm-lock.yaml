@@ -15,8 +15,8 @@ importers:
         specifier: ^3.23.0
         version: 3.23.0
       vitepress-plugin-llms:
-        specifier: ^1.13.1
-        version: 1.13.1
+        specifier: ^1.13.2
+        version: 1.13.2
     devDependencies:
       prettier:
         specifier: ^3.8.4
@@ -214,8 +214,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify-json/simple-icons@1.2.86':
-    resolution: {integrity: sha512-t3jck5qPQuK1qy+bRn9eCoDQhIB7XSazKz1Fjp8hcan3XOAsTI5Mq/s3F0ekOKSvMQqkVORYK6ns6o6T9f5EMA==}
+  '@iconify-json/simple-icons@1.2.87':
+    resolution: {integrity: sha512-8YciStObhSji3OZFmWAWK6kBujyqO5bLCxeDwLxf3CR3F4PVelq7keC2LBvgTqviWzSTysj5/g4PCFLiAMVGsw==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -821,8 +821,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  nanoid@3.3.14:
-    resolution: {integrity: sha512-U9kYi5bpVMEI31yC8iw4bJJp0avcHXA0W8/wNfLfnvJYzihQo2ZRPYPvpAAd570HAcCBjCTN7vnr+v4StKl1IQ==}
+  nanoid@3.3.15:
+    resolution: {integrity: sha512-y7Wygv/7mEOvxTuEQDB8StXdMRBWf1kR/tlhAzBRUFkB2jfcLOAxO/SHmOO2zgz1pVgK29/kyupn059/bCHdjA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1018,8 +1018,8 @@ packages:
       yaml:
         optional: true
 
-  vitepress-plugin-llms@1.13.1:
-    resolution: {integrity: sha512-m+rxyghF5INi8hBw0huFPx6+VvaX1tDGvw1H7FdXowaZJ3dcRY5ShgbmK1AQlmeOFMdd16H8WarhSHLPXF/2OA==}
+  vitepress-plugin-llms@1.13.2:
+    resolution: {integrity: sha512-2O4s0I5pjEZzgnoWgBPCZCyhah9FH5uQB6lGADazMoyF1URJshtG04ZnmX+cbmQmniN3T5JzdJO9B4q8JHDKOQ==}
     engines: {node: '>=18'}
 
   vitepress@2.0.0-alpha.16:
@@ -1167,7 +1167,7 @@ snapshots:
   '@esbuild/win32-x64@0.27.7':
     optional: true
 
-  '@iconify-json/simple-icons@1.2.86':
+  '@iconify-json/simple-icons@1.2.87':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -1823,7 +1823,7 @@ snapshots:
 
   ms@2.1.3: {}
 
-  nanoid@3.3.14: {}
+  nanoid@3.3.15: {}
 
   oniguruma-parser@0.12.2: {}
 
@@ -1843,7 +1843,7 @@ snapshots:
 
   postcss@8.5.15:
     dependencies:
-      nanoid: 3.3.14
+      nanoid: 3.3.15
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -2047,7 +2047,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitepress-plugin-llms@1.13.1:
+  vitepress-plugin-llms@1.13.2:
     dependencies:
       gray-matter: 4.0.3
       markdown-it: 14.2.0
@@ -2071,7 +2071,7 @@ snapshots:
       '@docsearch/css': 4.6.3
       '@docsearch/js': 4.6.3
       '@docsearch/sidepanel-js': 4.6.3
-      '@iconify-json/simple-icons': 1.2.86
+      '@iconify-json/simple-icons': 1.2.87
       '@shikijs/core': 3.23.0
       '@shikijs/transformers': 3.23.0
       '@shikijs/types': 3.23.0
