@@ -73,6 +73,10 @@ export default defineConfig({
               text: "BranchMissions",
               link: "/extension-tutorial/BranchMissions",
             },
+            {
+              text: "MissionFunction",
+              link: "/extension-tutorial/MissionFunction"
+            }
           ],
         },
       ],
