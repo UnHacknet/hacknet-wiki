@@ -1,21 +1,6 @@
 # MissionFunction / Function
 
-Function 也可以 实时改变游戏中的部分内容。
-
-Function 通过 Mission 中的 [`missionStart`](./Mission.md#missionstart) 或 [`missionEnd`](./Mission.md#missionend) 元素、或 Action [RunFunction](./Action.md#runfunction) 来使用。本章的所有 Function 使用示范均使用 Action [RunFunction](./Action.md#runfunction) 来演示。
-
-
-参数的传递方法有在 Function 名称后面跟 `:[文本]` 和传递 值 使用。以下为使用文本参数和值参数的例子：
-```xml
-<!-- 值 参数 -->
-<RunFunction FunctionName="changeSong" FunctionValue="2"/>
-<!-- 文本 参数 -->
-<RunFunction FunctionName="setFaction:Entropy"/>
-```
-
-有理由认为 Function 最早是用来方便给 Mission 加功能的，因为游戏中有一部分 Function 都是给 Hacknet 本体使用的（不是为 Extension 准备的），而且在 Hacknet 的源码中相关类就叫 `MissionFunctions` 。
-
-参考：[MissionFunctions.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/MissionFunctions.cs)
+本章的所有 Function 使用示范均使用 Action [RunFunction](./Action.md#runfunction) 来演示。
 
 ## 所有公开 Function
 
