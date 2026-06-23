@@ -2,11 +2,9 @@
 
 在本章节中，我们将介绍 Hacknet 中的 Mission（任务）功能。Mission 的主要用途是去引导玩家做一些事情。
 
-玩家在 Hacknet 主线接到的第一封邮件——来自 Bit 的 *初次联系*，便是一个 Mission。
-
 在 Hacknet 中，Mission 通过 XML 文件来定义。
 
-这是 Hacknet 中*甲虫计划*的简化版本。*甲虫计划* 的 Mission 涵盖了所有 Mission 功能，本章节我们通过相关任务来了解 Mission 的基本结构与用法。
+这是 Hacknet 中 *甲虫计划* 的简化版本。*甲虫计划* 的 Mission 涵盖了所有 Mission 功能，本章节我们通过相关任务来了解 Mission 的基本结构与用法。
 ```xml
 <mission id="hubSet09">
   <goals>
