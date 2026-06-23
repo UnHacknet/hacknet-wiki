@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Hacknet.wiki"
   text: "Hacknet (Extension) 文档中心"
-  tagline: 以<b>内容为主</b>，由社区驱动的开源文档项目。
+  tagline: 内容为主，社区驱动 的开源文档项目。
   actions:
     - theme: brand
       text: Extension 教程
