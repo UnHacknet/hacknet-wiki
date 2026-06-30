@@ -1,8 +1,8 @@
 {
   "private": true,
   "devDependencies": {
-    "prettier": "^3.8.4",
-    "vitepress": "2.0.0-alpha.16"
+    "prettier": "^3.9.4",
+    "vitepress": "2.0.0-alpha.17"
   },
   "scripts": {
     "dev": "vitepress dev docs",
