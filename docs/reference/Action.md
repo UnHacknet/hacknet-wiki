@@ -351,7 +351,7 @@ Delete all files and backups
 Get out of there!</StartScreenBleedEffect>
 ```
 开始 `ScreenBleed` 效果。与紧急恢复模式下的相似效果互不干扰。
-- `AlertTitle`：`string`，提示标题。在 Hacknet 中显示的字体的小写字母是大写字母的左右翻转版本。
+- `AlertTitle`：`string`，提示标题。在 Hacknet 中用于显示标题的字体，字母大小写的形态不同。大写字母是英文字母，部分小写字母像是西里尔字母。如果你发现标题包含了不像是英文的字母，可能是因为用了小写字母。
 - *`CompleteAction`*?：`string`，`ScreenBleed` 结束后加载的 ConditionalActions 的文件路径。被 Action `CancelScreenBleedEffect` 取消时不会加载。
 - *`TotalDurationSeconds`*?：`float`，总持续时间（秒）。默认值为 `200`。
 - 内容：左下角的提示内容。最多三行。
