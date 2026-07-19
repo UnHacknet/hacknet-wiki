@@ -1,18 +1,17 @@
 # Hacknet Extension 教程
 
 > [!WARNING]
-> 本教程目前处于开发早期阶段，可能会有错误、不完整或不完整的内容。如需要相对完整的教程，请暂时访问 [Hacknet-Extension-Tutorial](https://github.com/FBIKdot/Hacknet-Extension-Tutorial) 或 [Old.Hacknet.wiki](https://old.hacknet.wiki)
+> 本教程目前处于早期开发阶段，可能存在错误、内容缺失或表述不当之处。如需查阅相对完整的教程，请暂时访问 [Hacknet-Extension-Tutorial](https://github.com/FBIKdot/Hacknet-Extension-Tutorial) 或 [Old.Hacknet.wiki](https://old.hacknet.wiki)。
 
-Hacknet Extension 是 Hacknet 的玩家扩展内容，主要由媒体文件和特定格式的文本（以 XML 为主）组成。
+Hacknet Extension 是玩家为 Hacknet 制作的扩展内容，主要由媒体文件和特定格式的文本（以 XML 为主）构成。
 
-学习 Hacknet Extension 开发所需的知识门槛较低，只需熟悉 XML 基本语法并对 Hacknet 游戏内容有大致了解即可。
+学习 Hacknet Extension 开发的知识门槛较低，只需掌握 XML 基本语法并对 Hacknet 游戏内容有大致了解即可。其主要难点在于理解 Hacknet 游戏的内部机制与 XML 格式规范之间的对应关系。
 
-本教程默认你已掌握 XML 基本语法并熟悉 Hacknet 游戏内容。若需学习 XML 基础知识，可参考 [Runoob XML 教程](https://www.runoob.com/xml/xml-tutorial.html)
+本教程默认读者已具备 XML 基础语法知识并熟悉 Hacknet 游戏内容。如需学习 XML 基础知识，可参考 [Runoob XML 教程](https://www.runoob.com/xml/xml-tutorial.html)。
 
-教程旨在入门 Hacknet Extension 开发，对基本组成部分进行介绍。某些组成部分会包含多个功能，这些功能并不会在教程中完整罗列。在每章教程的末尾都会附带上本站的 [参考](../reference/index.md)，用于查阅完整功能列表。
+本教程旨在帮助读者入门 Hacknet Extension 开发，介绍其基本组成部分。某些组件包含多种功能，教程不会逐一详述。每章末尾均附有 [参考文档](../reference/index.md)，供查阅完整功能列表。
 
-本教程仅关注 Extension 开发，不涉及 Mod 内容。如果你搞不清楚两者的关系，见 [FAQ: Extension 和 Mod 的区别](../hnfaq.md#difference-between-ext-and-mod)
-
+本教程仅涉及 Extension 开发，不包含 Mod 相关内容。如不清楚两者的区别，请参阅 [FAQ：Extension 与 Mod 的区别](../hnfaq.md#difference-between-ext-and-mod)。
 ## 参考资料
 
 教程会主要参考以下权威内容。
