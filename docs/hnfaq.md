@@ -31,12 +31,12 @@ import RainbowText from './components/RainbowText.vue'
 
 ## Extension 和 Mod 的区别 {#difference-between-ext-and-mod}
 
-Hacknet 是一个 数据驱动 的游戏，Hacknet 程序本身只是一个执行引擎，游戏机制通过编程实现，而任务、故事等内容部分通过 数据 定义。Extension（扩展）则是玩家根据执行引擎的规则自制的“数据”，Hacknet 的 Steam Workshop 分享的东西本质也是“数据”。
+Hacknet 是一款**数据驱动**的游戏。游戏程序本身只是一个执行引擎，核心机制通过代码实现，而任务、剧情等内容则通过**数据**来定义。Extension（扩展）是玩家依据执行引擎的规则自制的"数据"，Steam Workshop 上分享的内容本质上也是"数据"。
 
-Mod 是 Modification （修改）的缩写，译为 模组。Hacknet 社区中使用最多的模组框架是 [Hacknet-Pathfiner](https://github.com/Arkhist/Hacknet-Pathfinder)。它为开发者提供基于编写代码来修改或增强 Hacknet 程序的工具。这其中主要是对 执行引擎 进行改动。
+Mod 是 Modification（修改）的缩写，中文译为**模组**。Hacknet 社区中最常用的模组框架是 [Hacknet-Pathfinder](https://github.com/Arkhist/Hacknet-Pathfinder)，它为开发者提供了通过编写代码来修改或增强游戏程序的工具，主要针对**执行引擎**进行改动。
 
-因为 Extension 不涉及代码修改，主要是对“数据”进行修改，一般认为 Extension 不属于 Mod 范畴，而通过 Pathfinder 来加载的自定义代码等，才被认为是 Mod。
+由于 Extension 不涉及代码修改，仅对"数据"进行调整，因此通常认为 Extension 不属于 Mod 的范畴；而通过 Pathfinder 加载的自定义代码等，才被视为真正的 Mod。
 
-Extension 和 Mod 对关系其实是相辅相成，Mod 提供新功能，而 Extension 提供具体内容。
+Extension 与 Mod 的关系是相辅相成的：Mod 提供新的功能，Extension 则提供具体的内容。
 
-部分中国 Hacknet 交流群会对分不清 Extension 和 Mod 区别的人进行惩罚。在这些社区讨论相关内容时，请确保你已经搞清楚他们的区别。
+部分中国 Hacknet 交流群会对混淆 Extension 和 Mod 概念的人进行处罚。在这些社区讨论相关内容时，请务必先弄清楚两者的区别。
