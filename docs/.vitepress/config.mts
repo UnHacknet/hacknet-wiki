@@ -177,7 +177,9 @@ export default defineConfig({
         matchAlgorithm: "v3",
       }),
     ],
-
+    image: {
+      lazyLoading: true,
+    },
     config(md) {
       md.use(copyOrDownloadAsMarkdownButtons);
     },
