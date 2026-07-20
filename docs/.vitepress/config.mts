@@ -61,6 +61,7 @@ export default defineConfig({
             { text: "开始", link: "/extension-tutorial/" },
             { text: "准备工作", link: "/extension-tutorial/preparing" },
             { text: "项目结构", link: "/extension-tutorial/structure" },
+            { text: "XML 注意事项", link: "/extension-tutorial/XMLNotice" },
           ],
         },
         {
