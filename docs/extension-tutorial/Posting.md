@@ -4,7 +4,7 @@ Posting 是 Mission 中的可选部分。
 
 ## 作为任务简介
 
-如果任务在任务中心，那么 Posting 会作为任务中心里面的任务简介。
+如果 Mission 在任务中心，那么 Posting 会作为任务中心里面的任务简介。
 
 任务中心有 MissionListingServer、MissionHubServer 和 DHS。
 ```xml
@@ -17,7 +17,7 @@ Posting 是 Mission 中的可选部分。
 
 ## 作为文章
 
-如果任务是新闻服务区中的文章，那么 Posting 会作为文章的内容。
+新闻服务器的文章也是用 Mission 写的。如果 Mission 是新闻服务器中的文章，那么 Posting 会作为文章的内容。
 
 ```xml
 <mission> <goals></goals> <nextMission>NONE</nextMission>
@@ -29,3 +29,7 @@ Posting 是 Mission 中的可选部分。
 ```
 
 新闻服务器其实是 VariableMissionListingServer，在 Hacknet 本体中 Slashbot 新闻服务器和 Kellis 帮助服务器就是 VariableMissionListingServer。
+
+## Posting 参考
+
+见 [参考：Mission#posting](../reference/Mission.md#posting)

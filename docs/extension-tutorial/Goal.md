@@ -51,4 +51,4 @@ Goal 用于定义 Mission 的完成条件。由 `<goals>` 包裹着的 `<goal>` 
 
 ## Goal 参考
 
-你可以在 [参考：Goal](/reference/Goal.md) 中查看所有的 Goal 类型。
+你可以在 [参考：Goal](../reference/Goal.md) 中查看所有的 Goal 类型。
