@@ -97,7 +97,7 @@ This is the body text of the posting that will appear when the mission is clicke
 Once accepted, the email should contain full details.
 </posting>
 ```
-当 Mission 添加进 MissionHub 时，在 MissionHub 的任务列表中会显示的内容。
+当 Mission 添加进 MissionListingServer、MissionHubServer 或 DHS 的任务列表中会显示的内容。
 - *`title`*?：`string`，任务的标题。
 - *`reqs`*?：`string`，描述需要满足的 flags 。多个 flags 之间用逗号 `,` 分隔。
 - *`requiredRank`*?：`int`，需要达到的 Rank。如果玩家当前不属于任何 `Faction`，则无用。

@@ -72,8 +72,20 @@ export default defineConfig({
               link: "/extension-tutorial/Mission",
             },
             {
+              text: "MissionEmail",
+              link: "/extension-tutorial/MissionEmail",
+            },
+            {
               text: "Goal",
               link: "/extension-tutorial/Goal",
+            },
+            {
+              text: "NextMission",
+              link: "/extension-tutorial/NextMission",
+            },
+            {
+              text: "Posting",
+              link: "/extension-tutorial/Posting",
             },
             {
               text: "MissionFunction",
@@ -84,6 +96,10 @@ export default defineConfig({
               link: "/extension-tutorial/BranchMissions",
             },
           ],
+        },
+        {
+          text: "Flag",
+          link: "/extension-tutorial/Flag",
         },
       ],
       "/reference": [

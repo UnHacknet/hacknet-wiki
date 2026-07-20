@@ -1,10 +1,12 @@
 # Mission （任务）
 
-在本章节中，我们将介绍 Hacknet 中的 Mission（任务）功能。Mission 的主要用途是去引导玩家做一些事情。
+在本章节中，我们将介绍 Hacknet 中的 Mission（任务）功能。在 Hacknet 中，Mission 通过 XML 文件进行定义。
 
-在 Hacknet 中，Mission 通过 XML 文件来定义。
+Mission 的主要作用是引导玩家完成特定操作。它由 Goal（目标）、MissionFunction（函数）、NextMission（下一个 Mission）、BranchMissions（分支 Mission）等元素组成。
 
-这是 Hacknet 中 *甲虫计划* 的简化版本。*甲虫计划* 的 Mission 涵盖了所有 Mission 功能，本章节我们通过相关任务来了解 Mission 的基本结构与用法。
+本章我们将尝试逐步还原 Hacknet 中 *甲虫计划* Mission 的一个简化版本。*甲虫计划* 的 Mission 涵盖了所有 Mission 功能，你可以在下方先预览一下。
+
+::: details *甲虫计划* 简化版
 ```xml
 <mission id="hubSet09">
   <goals>
@@ -14,10 +16,10 @@
   <missionStart val="9">changeSong</missionStart>
   <missionEnd val="1">junebugComplete</missionEnd>
   
-  <nextMission>BitAdv_Intro.xml</nextMission>
+  <nextMission>Missions/BitAdv_Intro.xml</nextMission>
   
   <branchMissions>
-    <branch>PacemakerSet_Deny_Branch.xml</branch>
+    <branch>Missions/PacemakerSet_Deny_Branch.xml</branch>
   </branchMissions>
   
   <posting title="甲虫计划" reqs="dechead, decypher,csecRankingS2Pass">
@@ -30,6 +32,7 @@
     <body>
 你好黑客, 
 这次的任务很不寻常, 请谨慎对待. 
+回复"deny"(放弃), 你就可以放弃这项任务. 
     </body>
     <attachments>
       <link comp="medical" />
@@ -40,16 +43,55 @@
   </email>
 </mission>
 ```
-接下来对该 Mission 进行解构。简单内容会大致介绍，复杂内容会在后面具体解释。
-## `Mission` 根元素
+:::
 
-Mission 的根元素。 
+## 通过模板创建一个 Mission 文件
+
+`BlankExtension/Missions/StartingMission.xml` 是一个简单的 Mission 文件模板。这个模板内只有被注释的元素是可选的，没有被注释的元素都是必须的，不能省略。你可以在此基础上编写 Mission。
+
 ```xml
-<mission id="hubSet09">
+<mission id="startingMission">
+  <goals>
+    <!-- Goals here -->
+  </goals>
+  <!-- 
+  Add your mission start and end items here
+  missionStart val="0">loadConditionalActions:Actions/TestActions.xml</missionStart>
+  missionEnd val="1">addRank</missionEnd> 
+  -->
+  <nextMission>NONE</nextMission>
+  <!-- 
+  <posting title="startingMission">This would be the post on a message board if it was on them.</posting>
+  -->
+  <email>
+    <sender>SENDER NAME HERE</sender>
+    <subject>This is an example email for Blank Extension</subject>
+    <body>You should add the body of the email here.
+Multiple lines etc.
+</body>
+    <attachments>
+      <!-- Add attachments like links and notes here -->
+    </attachments>
+  </email>
+</mission>
+```
+
+## Mission 的根元素
+
+Mission 的根元素 `<mission>` 中属性都是非必需的。
+```xml
+<mission id="missionid" activeCheck="false" shouldIgnoreSenderVerification="false">
   ...
 </mission>
 ```
 
+Mission 的 id 没有被直接使用，即使大部分都有 `id` 属性。甲虫计划的 Mission 的 id 是 `hubSet09`。
+
+`activeCheck` 会影响 Goal 的检查方式，在后续 Goal 会具体介绍。
+
+`shouldIgnoreSenderVerification` 默认为 `false`。为 `true` 时，Mission 会忽略发送者验证，一般不常用。
+
+<!--
 ## Goal（目标）
 
 Goal 用于定义任务完成的目标。在后面 [Goal](./Goal.md) 中会具体介绍。
@@ -120,4 +162,4 @@ Mission 开始时发送的邮件。Hacknet 中有多种 Email，Mission 中的 E
 </note>
   </attachments>
 </email>
-```
+``` -->
