@@ -7,15 +7,15 @@
 旨在搭建以内容为主，社区驱动的 Hacknet 文档中心。
 
 > [!WARNING]
-> 目前处于开发早期阶段，未正式投入使用。如果你需要教程，请暂时移步 https://github.com/FBIKdot/Hacknet-Extension-Tutorial
+> 目前处于开发早期阶段，正在积极完善内容。如果你需要教程，请暂时移步 https://github.com/FBIKdot/Hacknet-Extension-Tutorial
+
+## Contributing // 贡献指南
+
+See [contributing.md](./contributing.md).
 
 ## Code Of Conduct
 
 See [code_of_conduct.md](./code_of_conduct.md).
-
-## Contributing
-
-See [contributing.md](./contributing.md).
 
 ## License
 
