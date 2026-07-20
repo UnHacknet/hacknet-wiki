@@ -36,7 +36,7 @@ Goal 用于定义 Mission 的完成条件。由 `<goals>` 包裹着的 `<goal>` 
 </mission>
 ```
 
-## 简化版 *甲虫计划*
+## 简化版 *甲虫计划* 的 Goal
 
 在 Hacknet 本体中，起搏器过载后，会赋予玩家一个 Flag `E_Whit:DEAD`。*甲虫计划* 通过检查玩家是否具有这个 Flag 来判断是否完成任务。
 
