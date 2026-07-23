@@ -4,20 +4,20 @@ import RainbowText from './components/RainbowText.vue'
 
 # 常见问题
 
-这里汇总了 Hacknet 使用及 Extension 开发过程中的常见问题。
+这里汇总了与 Hacknet 游戏本身相关的常见问题与解决方案。
 
-## Q：玩 Hacknet 算入门黑客吗？{#q-can-i-be-hacker}
+## 玩 Hacknet 算入门黑客吗？{#q-can-i-be-hacker}
 
 ::: details A：（点击展开）
 <RainbowText>不算</RainbowText>
 :::
 
-## Q：现实中存在类似 PortHack 的工具吗？{#q-port-hack-exists}
+## 现实中存在类似 PortHack 的工具吗？{#q-port-hack-exists}
 ::: details A：（点击展开）
 <RainbowText>没有</RainbowText>
 :::
 
-## Q：如何找到 Hacknet 游戏的根目录？ {#q-how-to-find-hacknet-root}
+## 如何找到 Hacknet 游戏的根目录？ {#q-how-to-find-hacknet-root}
 
 ::: details A：（点击展开）
 如果你的 Hacknet 是从 Steam 上下载的，在 Steam 库中找到 Hacknet 游戏，右键点击它，选择“管理”，然后找到“浏览本地文件”按钮，点击它即可打开游戏根目录。通常是 `[盘符]:\Program Files (x86)\Steam\steamapps\common\Hacknet` 或 `[盘符]:\SteamLibrary\steamapps\common\Hacknet`。
