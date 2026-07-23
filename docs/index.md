@@ -18,7 +18,11 @@ hero:
 
 ### [常见问题](./hnfaq.md)
 
-汇总 Hacknet 使用及 Extension 开发过程中可能遇到的常见问题。
+汇总与 Hacknet 游戏本身相关的常见问题与解决方案。
+
+### [Extension 常见问题](./hnextfaq.md)
+
+汇总与 Hacknet Extension 相关的常见问题与解决方案。
 
 ### Awesome
 
