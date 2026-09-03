@@ -110,5 +110,5 @@ O Errors Found
 > 在后续内容中，我们将默认以扩展目录作为当前工作目录 (`/`)，以 `Hacknet/` 目录作为游戏根目录。
 > 
 > 我们可能会使用来自 `BlankExtension/` 或 `IntroExtension/` 两个内置目录的文件作为模板，它们的位置都在 `Hacknet/Extensions/` 目录下。
-> 虽然本节使用的 `MyFirstExtension` 是从 `BlankExtension/` 复制而来，已包含 `BlankExtension/` 中的文件，但为防止歧义，后续内容中的模板路径将统一使用 ``BlankExtension/` 来表示位置。
+> 虽然本节使用的 `MyFirstExtension` 是从 `BlankExtension/` 复制而来，已包含 `BlankExtension/` 中的文件，但为防止歧义，后续内容中的模板路径将统一使用 `BlankExtension/` 来表示位置。
 
