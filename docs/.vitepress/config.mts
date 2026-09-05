@@ -230,6 +230,10 @@ export default defineConfig({
                 },
               ],
             },
+            {
+              text: "HackerScripts",
+              link: "/reference/HackerScripts",
+            },
           ],
         },
       ],
