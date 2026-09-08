@@ -15,10 +15,5 @@
     "vitepress": "2.0.0-alpha.20",
     "vitepress-plugin-llms": "^1.13.5"
   },
- "packageManager": "pnpm@11.22.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  }
+  "packageManager": "pnpm@11.22.0"
 }
