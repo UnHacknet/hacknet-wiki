@@ -15,14 +15,7 @@
     "vitepress": "2.0.0-alpha.20",
     "vitepress-plugin-llms": "^1.13.5"
   },
-  "devEngines": {
-    "runtime": {
-      "name": "node",
-      "version": "^v24.18.0",
-      "onFail": "download"
-    }
-  },
-  "packageManager": "pnpm@11.22.0",
+ "packageManager": "pnpm@11.22.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
