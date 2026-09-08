@@ -9,10 +9,10 @@
     "test": "pnpm build && oxfmt --check"
   },
   "devDependencies": {
-    "@catppuccin/vitepress": "^0.1.2",
+    "@catppuccin/vitepress": "^0.1.4",
     "@shikijs/transformers": "^4.4.3",
     "oxfmt": "^0.63.0",
-    "vitepress": "2.0.0-alpha.19",
+    "vitepress": "2.0.0-alpha.20",
     "vitepress-plugin-llms": "^1.13.5"
   },
   "devEngines": {
@@ -22,5 +22,10 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@11.22.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
