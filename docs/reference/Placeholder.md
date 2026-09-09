@@ -45,22 +45,22 @@ DLC特供:
 
 一些主题附上图片:  
 `WHITE_THEME` :  
-![](../Assets/Nodes/Themes/White_Theme.png)  
+![](./assets/White_Theme.png)  
 
 `GREEN_THEME` :  
-![](../Assets/Nodes/Themes/Green_Theme.png)  
+![](./assets/Green_Theme.png)  
 
 `YELLOW_THEME` :  
-![](../Assets/Nodes/Themes/Yellow_Theme.png)  
+![](./assets/Yellow_Theme.png)  
 
 `TEAL_THEME` :  
-![](../Assets/Nodes/Themes/Teal_Theme.png)  
+![](./assets/Teal_Theme.png)  
 
 `BASE_THEME` :  
-![](../Assets/Nodes/Themes/Base_Theme.png)  
+![](./assets/Base_Theme.png)  
 
 `PURPLE_THEME` :  
-![](../Assets/Nodes/Themes/Purple_Theme.png)  
+![](./assets/Purple_Theme.png)  
 
 `MINT_THEME` :  
-![](../Assets/Nodes/Themes/Mint_Theme.png)
+![](./assets/Mint_Theme.png)
