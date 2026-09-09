@@ -236,7 +236,7 @@ export default defineConfig({
             },
             {
               text: "占位符",
-              link: "/reference/PlaceHolder"
+              link: "/reference/Placeholder"
             }
           ],
         },
