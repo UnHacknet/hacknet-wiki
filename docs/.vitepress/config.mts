@@ -234,6 +234,10 @@ export default defineConfig({
               text: "HackerScripts",
               link: "/reference/HackerScripts",
             },
+            {
+              text: "占位符",
+              link: "/reference/PlaceHolder"
+            }
           ],
         },
       ],
