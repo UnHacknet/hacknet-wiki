@@ -19,3 +19,26 @@ def RemoveFlags(*flags: str):
 def HasFlag(flag: str) -> bool:
     return flag in player_flags
 ```
+以下是通常见到的用法
+# Actions
+```xml
+<ConditionalActions>
+    <HasFlags requiredFlags="xxx">
+        <KillExe DelayHost="dh" Delay="1" ExeName="*"/>
+        ...
+    </HasFlags>
+    ...
+</ConditionalActions>
+```
+# Missions
+```xml
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<mission id="startingMission" activeCheck="false" shouldIgnoreSenderVerification="false">
+    <goals>
+        <goal type="hasflag" target="xxx"/>
+        ...
+    </goals>
+    ...
+</mission>
+```
+以上两种均为关于flag的检测判定
