@@ -13,7 +13,7 @@
     "@shikijs/transformers": "^4.4.3",
     "oxfmt": "^0.63.0",
     "vitepress": "2.0.0-alpha.20",
-    "vitepress-plugin-llms": "^1.13.5"
+    "vitepress-plugin-llms": "^1.14.0"
   },
   "packageManager": "pnpm@11.22.0"
 }
