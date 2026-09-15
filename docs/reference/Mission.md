@@ -49,7 +49,19 @@ Mission 的根元素。
 ```
 任务被加载后执行的 Function。不使用可以把 `<missionStart>` 元素删除。
 - *`val`*?：`int`，Function 的参数。默认值为 `0`。
-- *`suppress`*?：`bool`，默认值为 `false`。`suppress` 为 `true` 时通过 `LoadMission` Action 加载的 Mission 的 `missionStart` 不会被执行，只有通过 Mission 的 `nextMission` 加载的任务的 missionStart 才会执行。`false` 时可能会多次执行（存读档）
+- *`suppress`*?：`bool`，默认值取决于运行模式：**扩展模式下为 `true`，主游戏模式下为 `false`**。
+  - ⚠️ 因此在扩展中**不写该属性等同于 `suppress="true"`**。
+  - `true`：加载时仅记录、不执行，等到「激活时机」才执行，包括：
+    - 通过 `nextMission` 进入的任务
+    - 扩展启动时的起始任务
+    - 在 MissionHubServer / MissionListingServer / DLCHubServer 等节点**接取**任务时 —— 激活由接取动作直接触发，**不以发送任务邮件为条件**（DHS 的接取不调用 `sendEmail`；另两者会调用，但是否真正发出取决于本任务的 `IsSilent`，见下文 `nextMission` 一节）
+    - ⚠️ 通过 [`LoadMission`](Action.md) Action 加载的任务不在上述路径中，其 `missionStart` **不会执行**；有需要时应显式写 `suppress="false"`
+  - `false`：任务文件**每次被解析时都会执行**。解析发生在任务的各种加载路径上，例如：
+    - 存读档 / 新游戏时的任务加载
+    - **DHS（`DLCHubServer`）每次连接**：`navigatedTo` → `ReadActiveMissions` → `MissionSerializer.restoreMissionFromFile` → 重新解析任务 XML
+    - 玩家接取 DHS 任务时（`PlayerAcceptMission` 中会再次解析任务文件）
+    - 注意 `MissionHubServer` / `MissionListingServer` 的任务恢复发生在 `loadInit`（随存档加载），**不随每次连接重载**
+  - 因此 hub / DHS 中的任务应使用 `suppress="true"`（**扩展模式下**可省略该属性；主游戏模式下省略等同于 `false`）
 
 ::: details (官方介绍)
 官方是这么介绍的：
@@ -59,7 +71,9 @@ otherwise it will activate when it is loaded. This is very important to remember
 writing missions designed for use in a hub server - those missions are loaded when the save game is loaded
 or a new game is started.
 ```
-但是实践证明，添加到 MissionHub 的 Mission 的 `missionStart` 在 `suppress` 为 `false` 时也没有被执行。
+实测补充：向 MissionHub 添加的 Mission 若**省略 `suppress` 属性**，其 `missionStart` 不会在加载时执行 —— 因为扩展模式下该属性默认为 `true`（任务被抑制，需等玩家接取时才激活）。显式写 `suppress="false"` 时，如上文所述，任务文件每次被解析都会执行。
+
+参考：[ComputerLoader.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/ComputerLoader.cs)、[MissionSerializer.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/MissionSerializer.cs)、[ActiveMission.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/ActiveMission.cs)、[MissionHubServer.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/MissionHubServer.cs)
 :::
 
 

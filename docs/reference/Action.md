@@ -81,16 +81,19 @@ Action `AddIRCMessage` 的 Delay 不需要 DelayHost，而是借助它的目标 
 ### `AddMissionToHubServer`
 
 ```xml
-<AddMissionToHubServer MissionName="Missions/MyMission.xml" TargetComp="missionHub" AssignmentTag="Kaguya" StartsComplete="true"/>
+<AddMissionToHubServer MissionFilepath="Missions/MyMission.xml" TargetComp="missionHub" AssignmentTag="Kaguya" StartsComplete="true"/>
 ```
 将一个 Mission 添加到 MissionHub/DHS 的任务列表中。
-- `MissionName`：`string`，Mission 的文件路径。
+- `MissionFilepath`：`string`，Mission 的文件路径。
 - `TargetComp`：`string`，HubServer 的 Computer ID。
 - *`AssignmentTag`*?：`string`，分配Tag。如果是给 MissionHub 添加任务，用 `"top"` 就会使任务置顶。给 DHS 添加，就会提示分配给了谁。
 - *`StartsComplete`*?：`bool`，是否开始完成。默认值为 `false`。
 
 > [!NOTE]
 > MissionHub 是拥有 `missionListingServer` 或 `missionHubServer` Daemon 的 Node，在游戏中作为“任务中心”。DHS 此处代指有 `DHSDaemon` Daemon 的 Node。
+
+> [!NOTE]
+> 通过此 Action 加入的任务，其 `missionStart` 在**加载时不会执行**（扩展模式下未显式设置 `suppress="false"` 时，该属性默认为 `true`），而是在玩家**接取**该任务时执行。详见 [Mission](Mission.md) 的 `missionStart` 一节。
 
 参考：[SAAddMissionToHubServer.cs](https://github.com/UnHacknet/OpenHacknet/blob/main/SAAddMissionToHubServer.cs)
 
