@@ -7,7 +7,6 @@ on:
 jobs:
   approval:
     runs-on: ubuntu-latest
-    environment: test
     steps:
       - uses: actions/checkout@v7
       - uses: pnpm/setup@v2
